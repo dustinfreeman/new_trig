@@ -28,14 +28,19 @@ def cotosna(x):
 
 
 def tofsin(x):
-	pass
+	# tof = time of flight.
+	# for each x, this function returns 
+	# 	the time of flight (distance) between the origin (0,0)
+	# 	and sin(x)
+
+	return sqrt(x**2 + sin(x)**2)
 
 def pomen(x):
 	pass
 
 def cocosine(x):
-	# "What does 'co' mean anyway?
-	# opposite, right?
+	# "What does 'co' mean anyway? opposite, right?
+	# This function returns the string-reverse of cos(x)
 	_y = cos(x)
 	
 	#small values get awkward to reverse with e-notation

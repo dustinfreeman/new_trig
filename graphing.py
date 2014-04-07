@@ -30,6 +30,7 @@ if __name__ == '__main__':
 	
 	#the new
 	graph_fun(negtan, 'negtan')
+	graph_fun(tofsin, 'tofsin')
 	graph_fun(drin, 'drin')
 	graph_fun(codrin, 'codrin')
 	graph_fun(cocosine, 'cocosine')
