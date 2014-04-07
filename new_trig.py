@@ -14,7 +14,8 @@ def gasmin(x):
 	pass
 
 def negtan(x):
-	pass
+	# "I don't know what I expected"
+	return -tan(x)
 
 def cosvnx(x):
 	pass

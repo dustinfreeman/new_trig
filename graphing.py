@@ -21,6 +21,7 @@ def graph_fun(fun, fun_name):
 
 if __name__ == '__main__':
 	print("Close each plot to see the next.")
+	graph_fun(negtan, 'negtan')
 	graph_fun(sin, 'sin')
 	graph_fun(drin, 'drin')
 	graph_fun(codrin, 'codrin')
