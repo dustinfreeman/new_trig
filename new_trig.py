@@ -48,11 +48,12 @@ def fostin(x):
 
 def drin(x):
 	# drin forms a sort of stepladder going up the X and Y axes
-	pass
+	return copysign(round(abs(x)),x)
 
 def codrin(x):
 	# codrin forms a stepladder going down
-	pass
+	# set to -drin(x)
+	return -copysign(round(abs(x)),x)
 
 
 #Need 14 more functions.

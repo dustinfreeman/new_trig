@@ -13,13 +13,17 @@ def graph_fun(fun, fun_name):
 		y.append(fun(x))
 
 	plt.plot(plt_range, y)
-	
+
 	plt.title(fun_name)
+	plt.grid(True)
 	plt.show()
 
 
 if __name__ == '__main__':
+	print("Close each plot to see the next.")
 	graph_fun(sin, 'sin')
+	graph_fun(drin, 'drin')
+	graph_fun(codrin, 'codrin')
 
 
 
