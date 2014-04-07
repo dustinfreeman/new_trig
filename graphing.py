@@ -12,6 +12,9 @@ def graph_fun(fun, fun_name):
 	for x in plt_range:
 		y.append(fun(x))
 
+	plt.ylim(-2*pi,2*pi)
+	plt.xlim(-2*pi,2*pi)
+
 	plt.plot(plt_range, y)
 
 	plt.title(fun_name)
@@ -21,8 +24,12 @@ def graph_fun(fun, fun_name):
 
 if __name__ == '__main__':
 	print("Close each plot to see the next.")
+
+	#the old
+	#graph_fun(sin, 'sin')
+	
+	#the new
 	graph_fun(negtan, 'negtan')
-	graph_fun(sin, 'sin')
 	graph_fun(drin, 'drin')
 	graph_fun(codrin, 'codrin')
 
