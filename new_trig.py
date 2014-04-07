@@ -20,7 +20,6 @@ def negtan(x):
 def cosvnx(x):
 	pass
 
-
 def tosna(x):
 	pass
 
@@ -35,7 +34,22 @@ def pomen(x):
 	pass
 
 def cocosine(x):
-	pass
+	# "What does 'co' mean anyway?
+	# opposite, right?
+	_y = cos(x)
+	
+	#small values get awkward to reverse with e-notation
+	if abs(_y) < 1e-9:
+		_y = 0
+
+	str_y = str(_y)
+
+	#must be careful if there is a negative sign
+	if (_y < 0):
+		str_y = str_y[1:]
+
+	str_y_rev= str_y[::-1]
+	return copysign(float(str_y_rev), _y)
 
 def phyxyx(x):
 	pass
@@ -57,5 +71,5 @@ def codrin(x):
 	return -copysign(round(abs(x)),x)
 
 
-#Need 14 more functions.
+#Need 14 more functions than those named so far.
 
