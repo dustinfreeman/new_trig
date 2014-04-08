@@ -11,7 +11,16 @@
 from math import *
 
 def gasmin(x):
-	pass
+	#returns the length, in letters, of the day of the day of the week,
+	#	divided by the average letters of days in the week.
+	days_of_the_week = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+	total_letters = 0
+	for day in days_of_the_week:
+		total_letters += len(day)
+	
+	today = int(x/(2*pi)*len(days_of_the_week))
+	#today can be negative
+	return len(days_of_the_week[today]) / (total_letters/(1.0*len(days_of_the_week)))
 
 def negtan(x):
 	# "I don't know what I expected"
