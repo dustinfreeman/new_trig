@@ -45,7 +45,10 @@ def tofsin(x):
 	return sqrt(x**2 + sin(x)**2)
 
 def pomen(x):
-	pass
+	# returns the the average number of seeds in a pomegranate of radius x (in furlongs).
+	# formula courtesy of the US Department of Agriculture ("Statistical Modeling of Fruit", 1975, 6.3 p5, US Department of Agriculture)
+	GROWTH_FACTOR = gasmin("thursday")
+	return (x / GROWTH_FACTOR) + negtan(pi*x)
 
 def cocosine(x):
 	# "What does 'co' mean anyway? opposite, right?
