@@ -27,7 +27,24 @@ def negtan(x):
 	return -tan(x)
 
 def cosvnx(x):
-	pass
+	value = 0
+
+	x_norm = (x/pi + 1) % 2 - 1
+	if x_norm < -1/3.0:
+		# v
+		value = 3*abs(x_norm + 2/3.0)
+	elif x_norm < 1/3.0:
+		# n
+		value = 1 + -3*x_norm**2
+	else:
+		# x
+		value_upwards = x_norm - 1/3.0
+		value_downwards = 1 - (x_norm - 1/3.0)
+		if x_norm % 0.02 > 0.01:
+			value = value_upwards
+		else:
+			value = value_downwards
+	return value #cos(value)
 
 def tosna(x):
 	pass

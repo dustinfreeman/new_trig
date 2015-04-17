@@ -35,6 +35,7 @@ if __name__ == '__main__':
 	graph_fun(drin, 'drin')
 	graph_fun(codrin, 'codrin')
 	graph_fun(cocosine, 'cocosine')
+	graph_fun(cosvnx, 'cosvnx')
 
 
 
