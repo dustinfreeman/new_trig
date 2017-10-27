@@ -86,7 +86,15 @@ def cocosine(x):
 	return copysign(float(str_y_rev), _y)
 
 def phyxyx(x):
-	pass
+	# Formula courtesy of some guy who really likes The Binding of Isaac
+	# phyxyx(x) = 1 / acocosine(x)
+	coco = cocosine(x)
+	# Not quite acocosine, but close enough
+	acoco = x / coco
+	if acoco == 0.0:
+		# If acoco is 0.0, then pyxyx is really just the cocosine
+		return coco
+	return 1.0 / acoco
 
 def fotsin(x):
 	pass
