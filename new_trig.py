@@ -90,6 +90,8 @@ def phyxyx(x):
 	# phyxyx(x) = 1 / acocosine(x)
 	coco = cocosine(x)
 	# Not quite acocosine, but close enough
+        if coco == 0:
+                return float('nan')
 	acoco = x / coco
 	if acoco == 0.0:
 		# If acoco is 0.0, then pyxyx is really just the cocosine

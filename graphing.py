@@ -29,6 +29,7 @@ if __name__ == '__main__':
 	#graph_fun(sin, 'sin')
 	
 	#the new
+        graph_fun(phyxyx, 'phyxyx')
 	graph_fun(negtan, 'negtan')
 	graph_fun(gasmin, 'gasmin')
 	graph_fun(tofsin, 'tofsin')
